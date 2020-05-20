@@ -1,10 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
 .App {
   text-align: center;
+  background-color: #8D8D8D;
+  height: 100%;
+  font-family: 'Pangolin', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drum_machine{
+  border: 3px solid yellow;
+  background-color: #B3B3B3;
+  max-width: 670px;
+  margin:10vh auto;
+}
+.panels_n_btns{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.drum_name{
+  width:100%;
+  margin:5px;
+  
+}
+.key_pads{
+  width:400px;
+  display:grid
+};
+.row{
+  width:100%
+}
+.key_button{
+  width:70px;
+  height:25px;
+  margin:13px;
+  box-shadow: 2px 3px grey;
+
+}
+.key_button_pressed{
+  width:70px;
+  height:25px;
+  margin:13px;
+  box-shadow: 2px 3px grey;
+  color:white;
+  box-shadow: 0px 0px grey;
+  background-color: chocolate;
+
+}
+.key_button:hover{
+  color:white;
+  box-shadow: 0px 0px grey;
+  background-color: chocolate;
+}
+
+.controls{
+  display:grid;
+  justify-items: center;
+  margin-bottom: 10px;
+  width:180px
+}
+.power_Control{
+  width:50px;
+  margin:10px auto;
+}
+.power_Control>p{
+  margin:4px auto;
+}
+
+.power_button_outer{
+  width:40px;
+  height:20px;
+  background-color: black;
+  margin:auto
+}
+.power_button_inner_right{
+  width:50%;
+  height: 100%;
+  background-color: chartreuse;
+  float:right
+}
+.power_button_inner_left{
+  width:50%;
+  height: 100%;
+  background-color: red;
+  float:left
+}
+
+.bank_Control{
+  width:50px;
+  margin:10px auto;
+}
+.bank_Control>p{
+  margin:4px auto;
+}
+
+.bank_button_outer{
+  width:40px;
+  height:20px;
+  background-color: black;
+  margin:auto
+}
+.bank_button_inner_right{
+  width:50%;
+  height: 100%;
+  background-color: chartreuse;
+  float:right
+}
+.bank_button_inner_left{
+  width:50%;
+  height: 100%;
+  background-color: red;
+  float:left
+}
+
+.the_lonely_p{
+  width:140px;
+  margin:10px auto;
+  padding:10px 10px;
+  height:17px;
+  background-color: black;
+  color:white
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,20 +128,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
